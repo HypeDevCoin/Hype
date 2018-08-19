@@ -93,10 +93,10 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x10;
-        pchMessageStart[1] = 0xc4;
-        pchMessageStart[2] = 0xfd;
-        pchMessageStart[3] = 0xe9;
+        pchMessageStart[0] = 0x61;
+        pchMessageStart[1] = 0x29;
+        pchMessageStart[2] = 0x19;
+        pchMessageStart[3] = 0xE8;
         vAlertPubKey = ParseHex("04a013785ea7a38a7106385003fef77896538a382addcc379cc45f3c98751d9af423a097776757576259351a98a8aaa628a1fd644c3232678c5845384c744ff8d7");
         nDefaultPort = 36050;
         bnProofOfWorkLimit = ~uint256(0) >> 20;
@@ -180,10 +180,10 @@ public:
     {
         networkID = CBaseChainParams::TESTNET;
         strNetworkID = "test";
-        pchMessageStart[0] = 0x14;
-        pchMessageStart[1] = 0x64;
-        pchMessageStart[2] = 0x54;
-        pchMessageStart[3] = 0x65;
+        pchMessageStart[0] = 0x2C;
+        pchMessageStart[1] = 0x51;
+        pchMessageStart[2] = 0x1A;
+        pchMessageStart[3] = 0x5D;
         vAlertPubKey = ParseHex("0485286086a0871308bf36519edb18d95bbe9b098abe14ec9b684b5255028ec644bacdbddb98a522a6bcd7ab8e7d3582d7a5b9bf59c427f7eabce447b5ba6de25f");
         nDefaultPort = 37030;
         nEnforceBlockUpgradeMajority = 51;
@@ -253,10 +253,10 @@ public:
         networkID = CBaseChainParams::REGTEST;
         strNetworkID = "regtest";
         strNetworkID = "regtest";
-        pchMessageStart[0] = 0x65;
-        pchMessageStart[1] = 0x14;
-        pchMessageStart[2] = 0x54;
-        pchMessageStart[3] = 0x64;
+        pchMessageStart[0] = 0xEF;
+        pchMessageStart[1] = 0xD6;
+        pchMessageStart[2] = 0x2A;
+        pchMessageStart[3] = 0xC4;
         nSubsidyHalvingInterval = 150;
         nEnforceBlockUpgradeMajority = 750;
         nRejectBlockOutdatedMajority = 950;
